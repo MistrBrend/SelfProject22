@@ -1,0 +1,52 @@
+:root{
+    --RoyalDarkBlue: #0A2463;
+    --RedSalsa: #FB3640;
+    --GraniteGray: #605F5E;
+    --CGblue: #247BA0;
+    --Platinum: #E2E2E2;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--GraniteGray);
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container{
+    display: flex;
+    background-color: var(--RedSalsa);
+
+    /* justify-content: end;
+    align-items: start; */
+
+    /* flex-wrap: wrap; */
+}
+
+.item {
+    flex-basis: 7rem;
+    background-color: var(--CGblue);
+
+    height: 7rem;
+    margin: 0.8rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.item:nth-of-type(1){
+    flex-grow: 1;
+}
+.item:nth-of-type(2){
+    flex-grow: 2;
+}
+.item:nth-of-type(3){
+    flex-grow: 9;
+}
