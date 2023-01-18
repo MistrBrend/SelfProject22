@@ -48,7 +48,7 @@ body{
 @keyframes animate{
     45%, 60%{
         left: 100%;
-        width: 30%;
+        width: 10%;
     }
     100%{
         left: 0%;
