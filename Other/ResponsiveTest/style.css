@@ -15,8 +15,10 @@
     font-family: 'Poppins', sans-serif;
     font-family: 'Source Sans Pro', sans-serif;
 }
-
-.nav{
+body{
+    background-color: gray;
+}
+nav{
     background-color: rgb(30, 30, 30);
 
     display: flex;
