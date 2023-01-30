@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(72, 217, 227);
+}
+header{
+    display: flex;
+    justify-content: center;
+    background-color: #0001;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 30px 8%;
+}
+header h1{
+    font-weight: bold;
+    font-size: 2.5rem;
+    width: 35%;
+    font-family: 'Poppins', sans-serif;
+}
+
+header nav{
+    width: 35%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    
+}
+header nav h3{
+    font-weight: normal;
+    font-family: 'Kalam', cursive;
+}
+header nav img{
+    width: 25px;
+    cursor: pointer;
+}
+header h1 span{
+    color: rgb(84, 255, 235);
+}
+
+/* Menu list (modal) */
+.menu-wrapper{
+    display: flex;
+    background-color: #fff9;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    padding: 30px 20.6%;
+
+    opacity: 0;
+}
+.menu-wrapper h1{
+    width: 70%;
+}
+.menu-wrapper nav{
+    background-color: #0001;
+    display: flex;
+    padding: 15px 0;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.opened{
+    opacity: 1;
+}
+
+.closed{
+    opacity: 0;
+}
+
+
+/* Main section */
+.intro{
+    margin: 0 20.6%;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    width: 30%;
+}
+.intro h2{
+    font-weight: 100;
+    font-size: 3.5rem;
+}
+.intro h3{
+    font-size: 3.7rem;
+    text-transform: uppercase;
+}
+.intro p{
+    font-size: 1.2rem;
+}
+.intro button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    background-color: #a2d22a;
+    border: none;
+    padding: 1% 5%;
+}
+.intro button img{
+    width: 25%;
+}
