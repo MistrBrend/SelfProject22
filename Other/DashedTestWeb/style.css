@@ -74,33 +74,42 @@ header h1 span{
     font-weight: 400;
     list-style: none;
     width: 40%;
-    padding: 0.5% 0;
-    padding-left: 20.6%;
     font-family: 'Kalam', cursive;
+}
+.menu-wrapper ul li a{
+    padding: 0.5% 0;
+    padding-left: 51.2%;
+    text-decoration: none;
+    position: relative;
+    display: block;
+    left: 0;
+    color: #fff;
 }
 .menu-wrapper li span{
     font-weight: bold;
 }
 
-.menu-wrapper li:hover,
-.menu-wrapper li:focus-within{
+.menu-wrapper ul li a:hover{
     background-color: rgb(84, 255, 235);
     color: rgb(47, 47, 47);
     cursor: pointer;
-    transition: all 600ms ease-in-out;
+    transition: all 500ms ease-in-out;
     
 }
 
 .opened{
     opacity: 0;
-    transition: all 600ms ease-in-out;
+    transition: all 500ms ease-in-out;
 }
 
 .closed{
     opacity: 1;
-    transition: all 600ms ease-in-out;
+    transition: all 500ms ease-in-out;
 }
-
+ul li.active a{
+    background-color: rgb(84, 255, 235);
+    color: rgb(47, 47, 47);
+}
 
 /* Main section */
 .intro{
