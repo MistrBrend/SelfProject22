@@ -1,0 +1,29 @@
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+}
+li{
+    list-style: none;
+    font-size: 1.5rem;
+}
+a{
+    border: 1px solid rgb(181, 220, 255);
+    background-color: rgb(241, 241, 241);
+    position: relative;
+    padding: 30px 50px;
+    color: rgb(0, 136, 255);
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: rgb(0, 136, 255);
+    color: rgb(255, 255, 255);
+    transition: 250ms all ease-out;
+}
+.active{
+    background-color: rgb(0, 136, 255);
+    color: rgb(255, 255, 255);
+}
