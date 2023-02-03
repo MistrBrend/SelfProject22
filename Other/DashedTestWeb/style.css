@@ -5,12 +5,12 @@
 }
 
 body{
-    background-color: rgb(72, 217, 227);
+    background-color: rgb(48, 58, 59);
 }
 header{
     display: flex;
     justify-content: center;
-    background-color: #0001;
+    background-color: #0005;
     text-transform: uppercase;
     color: #fff;
     padding: 30px 8%;
@@ -38,16 +38,15 @@ header nav .hamburger-menu-open img,
 header nav .hamburger-menu-close img{
     width: 25px;
     cursor: pointer;
-    fill: #b9e648;
 }
 header h1 span{
-    color: rgb(84, 255, 235);
+    color: rgb(72, 217, 227);
 }
 
 /* Menu list (modal) */
 .menu-wrapper{
     display: flex;
-    background-color: rgb(81, 81, 81);
+    background: linear-gradient(100deg,#515151 55%, rgb(72, 217, 227) 45%);
     left: 0;
     top: 0;
     right: 0;
@@ -62,10 +61,12 @@ header h1 span{
 }
 .menu-wrapper nav{
     display: flex;
-    padding: 15px 0;
-    align-items: flex-start;
-    justify-content: flex-end;
+    padding: 15px;
+    margin: 0 -15px;
+    height: fit-content;
+    background-color: #515151;
 }
+
 .menu-wrapper ul{
     position: absolute;
     left: 0;
@@ -73,7 +74,7 @@ header h1 span{
     margin: 4% 0;
 }
 .menu-wrapper li{
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 400;
     list-style: none;
     width: 40%;
@@ -92,11 +93,11 @@ header h1 span{
     font-weight: bold;
 }
 .menu-list li a.active {
-    background-color: rgb(84, 255, 235);
+    background-color: rgb(72, 217, 227);
     color: rgb(47, 47, 47);
 }
 .menu-wrapper .menu-list li a:hover{
-    background-color: rgb(84, 255, 235);
+    background-color: rgb(72, 217, 227);
     color: rgb(47, 47, 47);
     cursor: pointer;
     transition: all 500ms ease-in-out;
@@ -112,7 +113,7 @@ header h1 span{
     display: flex;
 }
 .menu-list .list a{
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     display: flex;
     align-items: center;
     height: 50px;
@@ -122,13 +123,13 @@ header h1 span{
     font-family: 'Poppins', sans-serif;
 }
 .menu-list .list a span{
-    color: rgb(84, 255, 235);
+    color: rgb(72, 217, 227);
 }
 .menu-list .list a:hover{
     color: rgb(212, 212, 212);
     transition: gap 250ms ease-in-out;
     gap: 0 60px;
-    color: rgb(84, 255, 235);
+    color: rgb(72, 217, 227);
 }
 .opened{
     opacity: 0;
@@ -140,7 +141,7 @@ header h1 span{
     transition: all 500ms ease-in-out;
 }
 ul li.active a{
-    background-color: rgb(84, 255, 235);
+    background-color: rgb(72, 217, 227);
     color: rgb(47, 47, 47);
 }
 
@@ -173,7 +174,7 @@ ul li.active a{
     justify-content: center;
     align-items: center;
     gap: 5%;
-    background-color: #b9e648;
+    background: rgb(72, 217, 227);
     border: none;
     margin: 4% 0;
     padding: 1% 5%;

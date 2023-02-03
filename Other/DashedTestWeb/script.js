@@ -6,30 +6,25 @@ const menuContainer = document.querySelector(".menu-list");
 const menuLinks = document.querySelectorAll(".link");
 const menuLists = document.querySelectorAll(".list");
 
-console.log(menuLists);
+// Home button on menu which makes u go back.
+menuLists[0].addEventListener("click", () => {
+  menuPage.toggle("closed");
+})
 
 // Makes the background of each menu button change color upon clicking
 menuLinks.forEach(link => {
   link.addEventListener("click", () => {
     menuContainer.querySelector(".active").classList.remove("active");
     link.classList.add("active");
-
-  })
-})
-
-menuLists.forEach(list => {
-  
-  list.addEventListener("click", () => {
-    links.querySelector(".list").classList.remove("nonhidden");
-    list.classList.add("nonhidden");
+    
+    // Opens de list under the link
+    const linkNumber = link.id - 1;
+    menuContainer.querySelector(".nonhidden").classList.remove("nonhidden");
+    menuLists[linkNumber].classList.add("nonhidden");
   })
 })
 
 
-// Home button on menu which makes u go back.
-menuLists[0].addEventListener("click", () => {
-  menuPage.toggle("closed");
-})
 
 // Open menu button
 open.addEventListener('click', () => {
