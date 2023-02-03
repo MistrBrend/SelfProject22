@@ -52,6 +52,7 @@ header h1 span{
     top: 0;
     right: 0;
     bottom: 0;
+    height: 150vh;
     position: absolute;
     padding: 30px 20.6%;
     opacity: 0;
@@ -90,15 +91,45 @@ header h1 span{
 .menu-wrapper li span{
     font-weight: bold;
 }
-
-.menu-wrapper ul li a:active,
-.menu-wrapper ul li a:hover{
+.menu-list li a.active {
+    background-color: rgb(84, 255, 235);
+    color: rgb(47, 47, 47);
+}
+.menu-wrapper .menu-list li a:hover{
     background-color: rgb(84, 255, 235);
     color: rgb(47, 47, 47);
     cursor: pointer;
     transition: all 500ms ease-in-out;
 }
-
+.menu-list .list{
+    display: none;
+    flex-direction: column;
+    background-color: rgb(85, 85, 85);
+    padding-left: 20.6%;
+    width: 40%;
+}
+.menu-list .nonhidden{
+    display: flex;
+}
+.menu-list .list a{
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    gap: 30px;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+.menu-list .list a span{
+    color: rgb(84, 255, 235);
+}
+.menu-list .list a:hover{
+    color: rgb(212, 212, 212);
+    transition: gap 250ms ease-in-out;
+    gap: 0 60px;
+    color: rgb(84, 255, 235);
+}
 .opened{
     opacity: 0;
     transition: all 500ms ease-in-out;
